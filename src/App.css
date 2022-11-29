@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+    width: 99%;
+    height: max-content;
+    background-color: rgb(60, 60, 247);
+    border-radius: 1rem;  
+    margin-left: 0.5%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header p:nth-child(1){
+    width: 100%;
+    height: max-content;
+    padding-top: 0.5rem ;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 3rem;
+    font-weight: 600;
+    word-spacing: 4px;
+    letter-spacing: 2px;
 }
-
-.App-link {
-  color: #61dafb;
+.header p:nth-child(2){
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    color: antiquewhite;
+    margin-top: 0.5rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+    word-spacing: 3px;
+    position: sticky;
+    padding-bottom: 0.5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main{
+    width: 99%;
+    height: max-content;
+    padding: 1rem;
+    text-align: center;
+}
+main .addText{
+    width: 80%;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    box-shadow: 2px 2px 2px 1px #252525;
+    position: absolute;
+    left: 8%;
+    border-top: 1px solid rgb(61, 61, 61);
+    border-left: 1px solid rgb(61, 61, 61);
+}
+main .btn{
+    width:3rem;
+    height:3rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 89%;
+    box-shadow: 2px 2px 2px 1px #252525;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    border-top: 1px solid rgb(61, 61, 61);
+    border-left: 1px solid rgb(61, 61, 61);
+}
+main .btn:hover{
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.637);
+    box-shadow: 2px 2px 2px 2px #252525;
+}
+.list-container{
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    left:12.5%;
+    top: 31vh;
+}
+.list-container .list{
+    width: 75%;
+    height: max-content;
+    border-radius:0.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.75rem;
+    background-color: rgba(70, 91, 209, 0.795);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    list-style: none;  
+    box-shadow: 3px 3px 3px rgba(68, 48, 87, 0.842);
+}
+.list .checkbox{
+    position: absolute;
+    left: 5%;
+    width: 2rem;
+    height: 2rem;
+    box-shadow: 2px 2px 2px black;
+}
+.list .delete{
+    position: absolute;
+    left: 70%;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+.list .delete:hover{
+    color: red;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
 }
