@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-fetch-crud-json-project/static/css/main.0cea7956.css",
-    "main.js": "/react-fetch-crud-json-project/static/js/main.3288c229.js",
+    "main.css": "/react-fetch-crud-json-project/static/css/main.81b234d1.css",
+    "main.js": "/react-fetch-crud-json-project/static/js/main.6a834162.js",
     "index.html": "/react-fetch-crud-json-project/index.html",
-    "main.0cea7956.css.map": "/react-fetch-crud-json-project/static/css/main.0cea7956.css.map",
-    "main.3288c229.js.map": "/react-fetch-crud-json-project/static/js/main.3288c229.js.map"
+    "main.81b234d1.css.map": "/react-fetch-crud-json-project/static/css/main.81b234d1.css.map",
+    "main.6a834162.js.map": "/react-fetch-crud-json-project/static/js/main.6a834162.js.map"
   },
   "entrypoints": [
-    "static/css/main.0cea7956.css",
-    "static/js/main.3288c229.js"
+    "static/css/main.81b234d1.css",
+    "static/js/main.6a834162.js"
   ]
 }
