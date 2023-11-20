@@ -1,123 +1,150 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    width: 100%;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.header{
-    width: 99%;
-    height: max-content;
-    background-color: rgb(60, 60, 247);
-    border-radius: 1rem;  
-    margin-left: 0.5%;
+.header {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: rgb(57, 72, 156);
+  border-radius: 0 0 1rem 1rem;
+  position: sticky;
+  top: 0%;
 }
-.header p:nth-child(1){
-    width: 100%;
-    height: max-content;
-    padding-top: 0.5rem ;
-    padding-bottom: 0.5rem;
-    text-align: center;
-    color: antiquewhite;
-    font-size: 3rem;
-    font-weight: 600;
-    word-spacing: 4px;
-    letter-spacing: 2px;
+.header p:nth-child(1) {
+  width: 100%;
+  height: max-content;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 2rem;
+  font-weight: 600;
+  word-spacing: 4px;
+  letter-spacing: 2px;
 }
-.header p:nth-child(2){
-    width: 100%;
-    height: max-content;
-    text-align: center;
-    color: antiquewhite;
-    margin-top: 0.5rem;
-    font-size: 1.75rem;
-    font-weight: 500;
-    word-spacing: 3px;
-    position: sticky;
-    padding-bottom: 0.5rem;
+.header p:nth-child(2) {
+  width: 100%;
+  height: max-content;
+  text-align: center;
+  color: antiquewhite;
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  word-spacing: 3px;
+  padding-bottom: 0.5rem;
 }
-main{
-    width: 99%;
-    height: max-content;
-    padding: 1rem;
-    text-align: center;
+main {
+  width: 100%;
+  margin-top: 1rem;
+  height: max-content;
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-main .addText{
-    width: 80%;
-    height: 3rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    box-shadow: 2px 2px 2px 1px #252525;
-    position: absolute;
-    left: 8%;
-    border-top: 1px solid rgb(61, 61, 61);
-    border-left: 1px solid rgb(61, 61, 61);
+main form {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
 }
-main .btn{
-    width:3rem;
-    height:3rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
+main .addText {
+  width: 70%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  box-shadow: 2px 2px 2px 3px #252525;
+}
+main .btn {
+  width: 20%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px #7a7a7a;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+}
+main .btn:hover {
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.637);
+  box-shadow: 2px 2px 2px 2px #252525;
+}
+.list-container {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.list-container .list {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 0.75rem;
+  background-color: rgba(57, 72, 156, 0.795);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  list-style: none;
+  box-shadow: 3px 3px 3px rgba(68, 48, 87, 0.842);
+  display: flex;
+  justify-content: space-between;
+}
+.checkbox-task {
+  width: 80%;
+  display: flex;
+}
+.task {
+  width: calc(100% - 2rem);
+  margin-left: 10px;
+  text-wrap: wrap;
+  text-align: left;
+}
+.list .checkbox {
+  width: 2rem;
+  height: 2rem;
+  box-shadow: 2px 2px 2px black;
+}
+.list .delete {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.list .delete:hover {
+  color: red;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  main form {
+    width: 60%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 89%;
-    box-shadow: 2px 2px 2px 1px #252525;
-    font-size: 1.5rem;
-    cursor: pointer;
-    border: none;
-    background-color: white;
-    border-top: 1px solid rgb(61, 61, 61);
-    border-left: 1px solid rgb(61, 61, 61);
-}
-main .btn:hover{
-    font-size: 2rem;
-    background-color: rgba(255, 255, 255, 0.637);
-    box-shadow: 2px 2px 2px 2px #252525;
-}
-.list-container{
-    width: 100%;
-    height: max-content;
-    position: absolute;
-    left:12.5%;
-    top: 31vh;
-}
-.list-container .list{
+    justify-content: space-around;
+  }
+  main .addText {
     width: 75%;
-    height: max-content;
-    border-radius:0.5rem;
-    padding: 0.5rem 1rem;
-    margin-top: 0.75rem;
-    background-color: rgba(70, 91, 209, 0.795);
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
-    list-style: none;  
-    box-shadow: 3px 3px 3px rgba(68, 48, 87, 0.842);
-}
-.list .checkbox{
-    position: absolute;
-    left: 5%;
-    width: 2rem;
-    height: 2rem;
-    box-shadow: 2px 2px 2px black;
-}
-.list .delete{
-    position: absolute;
-    left: 70%;
-    width: 1.75rem;
-    height: 1.75rem;
-}
-.list .delete:hover{
-    color: red;
-    height: 2rem;
-    width: 2rem;
-    cursor: pointer;
+  }
+  main .btn {
+    width: 4rem;
+  }
+  .list-container {
+    width: 80%;
+  }
 }
